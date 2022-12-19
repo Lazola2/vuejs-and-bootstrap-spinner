@@ -17,8 +17,8 @@
         return new Promise((resolve) => {
             setTimeout(() => {
                 resolve({
-                   name: 'Lazola Makubalo',
-                   picture: '<link>',
+                   name: 'Trevor Noah',
+                   picture: 'https://i.postimg.cc/MKcHVZnK/Trevor-noah.jpg',
                    bio: 'A web and a software developer'
                 })
             }, 1000)
@@ -34,6 +34,31 @@
     }
 </script>
 
-<style>
+<style scoped>
+    .profile-card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 15px 0 gray;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
 
+    .profile-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 2rem;
+        justify-content: center;
+        gap: 0;
+    }
+    .profile-image img {
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid rgb(26, 193, 87);
+        padding: 2px;
+    }
 </style>
